@@ -1,63 +1,33 @@
 # Walmart_Business_Insights_with_SQL
 ![Alt text](https://github.com/Chetu6474/Walmart_Business_Insights_with_SQL/blob/main/png.png?raw=true)
 
-# Walmart Sales Data Analysis
-
 ## Project Overview
 
-This project aims to analyze Walmart's sales data to uncover business insights. By utilizing the Kaggle API, Python (pandas for data cleaning), and PostgreSQL (for database management and querying), the project solves 20 real-time business problems related to Walmart’s sales and operations. The analysis includes revenue trends, best-selling product categories, and customer buying behavior.
-
-## Project Structure
-
-```plaintext
-Walmart-Sales-Data-Analysis/
-│
-├── data/                   # Folder containing the Walmart sales data
-│
-├── sql_queries/            # Folder for SQL query scripts used for business problem-solving
-│
-├── notebooks/               # Jupyter Notebooks (if any)
-│
-├── README.md               # Project overview and setup instructions
-│
-└── requirements.txt        # Python dependencies for project setup
-```
-
-
-
-
-
-
-
-## Project Overview
-
-This project is an end-to-end data analysis solution designed to extract critical business insights from Walmart sales data. We utilize Python for data processing and analysis, SQL for advanced querying, and structured problem-solving techniques to solve key business questions. The project is ideal for data analysts looking to develop skills in data manipulation, SQL querying, and data pipeline creation.
+This project focuses on solving real-world Walmart business challenges by analyzing sales data. The project involves downloading the dataset using the Kaggle API, cleaning and preparing the data with Python and pandas, and utilizing PostgreSQL for storage and querying. Through SQL, we solve around 20 business problems that provide valuable insights into Walmart’s operations, sales, and performance.
 
 ## Project Pipeline
 
 ### Project Steps
 
 1. **Set Up the Environment**  
-   - **Tools Used**: Visual Studio Code (VS Code), Python, SQL (MySQL and PostgreSQL)  
-   - **Goal**: Create a structured workspace within VS Code and organize project folders for smooth development and data handling.
+   - **Tools Used**: Visual Studio Code (VS Code), Python, PostgreSQL  
+   - **Goal**: Organize the project in VS Code, ensuring all necessary libraries and tools are ready for the development process.
 
 2. **Set Up Kaggle API**  
-   - **API Setup**: Obtain your Kaggle API token from Kaggle by navigating to your profile settings and downloading the JSON file.  
-   - **Configure Kaggle**:  
-     - Place the downloaded `kaggle.json` file in your local `.kaggle` folder.  
-     - Use the command `kaggle datasets download -d <dataset-path>` to pull datasets directly into your project.
-
+   - **API Setup**: Download the Kaggle API token from your Kaggle profile and place the `kaggle.json` file in your `.kaggle` folder.
+   - **Download Data:**: Use the Kaggle API command to download the Walmart sales dataset.
+   
 3. **Download Walmart Sales Data**  
-   - **Data Source**: Use the Kaggle API to download the Walmart sales datasets from Kaggle.  
+   - **Data Source**: Download the dataset directly from Kaggle.  
    - **Dataset Link**: [Walmart Sales Dataset](https://www.kaggle.com/datasets)  
    - **Storage**: Save the data in the `data/` folder for easy reference and access.
 
 4. **Install Required Libraries and Load Data**  
    - **Libraries**: Install necessary Python libraries using:  
      ```bash
-     pip install pandas numpy sqlalchemy mysql-connector-python psycopg2
+     pip install pandas numpy sqlalchemy psycopg2
      ```  
-   - **Loading Data**: Read the data into a Pandas DataFrame for initial analysis and transformations.
+   - **Loading Data**: Import the dataset into a Pandas DataFrame for preliminary analysis.
 
 5. **Explore the Data**  
    - **Goal**: Conduct an initial data exploration to understand data distribution, check column names, types, and identify potential issues.  
@@ -74,13 +44,13 @@ This project is an end-to-end data analysis solution designed to extract critica
    - **Create New Columns**: Calculate the Total Amount for each transaction by multiplying `unit_price` by `quantity` and adding this as a new column.  
    - **Enhance Dataset**: Adding this calculated field will streamline further SQL analysis and aggregation tasks.
 
-8. **Load Data into MySQL and PostgreSQL**  
-   - **Set Up Connections**: Connect to MySQL and PostgreSQL using SQLAlchemy and load the cleaned data into each database.  
-   - **Table Creation**: Set up tables in both MySQL and PostgreSQL using Python SQLAlchemy to automate table creation and data insertion.  
+8. **Load Data into PostgreSQL**  
+   - **Set Up Connections**: Use Python's SQLAlchemy to connect to PostgreSQL.  
+   - **Table Creation**: Set up tables in PostgreSQL using Python SQLAlchemy to automate table creation and data insertion.  
    - **Verification**: Run initial SQL queries to confirm that the data has been loaded accurately.
 
 9. **SQL Analysis: Complex Queries and Business Problem Solving**  
-   - **Business Problem-Solving**: Write and execute complex SQL queries to answer critical business questions, such as:  
+   - **Business Problem-Solving**: Solve 20 real-time Walmart business problems using SQL, including:  
      - Revenue trends across branches and categories.  
      - Identifying best-selling product categories.  
      - Sales performance by time, city, and payment method.  
@@ -95,3 +65,22 @@ This project is an end-to-end data analysis solution designed to extract critica
       - Jupyter Notebooks (if applicable).  
       - SQL query scripts.  
       - Data files (if possible) or steps to access them.
+     
+## Project Structure
+
+```plaintext
+Walmart-Sales-Data-Analysis/
+│
+├── data/                   # Folder containing the Walmart sales data
+│
+├── sql_queries/            # SQL query scripts used for business problem-solving
+│
+├── notebooks/               # Jupyter Notebooks for Python analysis
+│
+├── README.md               # Project documentation
+│
+└── requirements.txt        # Python dependencies for project setup
+│
+└── main.py                 # Main script for loading, cleaning, and processing data
+```
+
