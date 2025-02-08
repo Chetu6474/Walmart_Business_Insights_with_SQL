@@ -1,3 +1,4 @@
+![Alt text](https://github.com/Chetu6474/Walmart_Business_Insights_with_SQL/blob/main/walmart-logo-blue-background-61j75hptlo79b8yz.jpg)
 # Walmart Business Insights with SQL
 ## 📖 Project Overview
 
