@@ -1,7 +1,7 @@
 # Walmart Business Insights with SQL
 ![Alt text](https://github.com/Chetu6474/Walmart_Business_Insights_with_SQL/blob/main/png.png?raw=true)
 
-## Project Overview
+## 📖 Project Overview
 
 This project focuses on solving real-world Walmart business challenges by analyzing sales data. The project involves downloading the dataset using the Kaggle API, cleaning and preparing the data with Python and pandas, and utilizing PostgreSQL for storage and querying. Through SQL, we solve around 20 business problems that provide valuable insights into Walmart’s operations, sales, and performance.
 
