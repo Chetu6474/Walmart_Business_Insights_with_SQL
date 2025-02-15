@@ -1,7 +1,7 @@
 ![Alt text](https://github.com/Chetu6474/Walmart_Business_Insights_with_SQL/blob/main/walmart-logo-blue-background-61j75hptlo79b8yz.jpg)
 # Walmart Business Insights with SQL
 ### 👉 [Explore the Interactive Dashboard](https://public.tableau.com/views/Dashboard_1_17396515533140/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-![Alt text]([https://github.com/Chetu6474/Walmart_Business_Insights_with_SQL/blob/main/png.png?raw=true](https://github.com/Chetu6474/Walmart_Business_Insights_with_SQL/blob/main/Dashboard.png))
+![Alt text]([https://github.com/Chetu6474/Walmart_Business_Insights_with_SQL/blob/main/png.png?raw=true])
 ## 📖 Project Overview
 
 This project focuses on solving real-world Walmart business challenges by analyzing sales data. The project involves downloading the dataset using the Kaggle API, cleaning and preparing the data with Python and pandas, and utilizing PostgreSQL for storage and querying. Through SQL, we solve around 20 business problems that provide valuable insights into Walmart’s operations, sales, and performance.
